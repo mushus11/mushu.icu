@@ -4,7 +4,7 @@ const 按钮 = document.querySelector(".按钮");
 const 后台 = document.querySelector(".后台");
 
 function 打开后台(){
-    window.location.href = "../unindex.php";
+    window.location.href = ".../back.html";
 }
 
 function 新任务(){
