@@ -27,6 +27,3 @@ function 打开后台(){
     window.location.href = "static/html/back.html";
 }
 后台.addEventListener("click",打开后台);
-
-
-const 打勾方块 = document.querySelector(".打勾方块");

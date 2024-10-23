@@ -1,6 +1,7 @@
 window.onload = function () {
     const 按钮 = document.querySelector(".按钮");
     const 垃圾桶 = document.querySelector(".垃圾桶");
+    const 打勾方块 = document.querySelector(".打勾方块");
 
     function 新任务() {
       if (文字栏.value === "") {
@@ -24,4 +25,40 @@ window.onload = function () {
         event.target.parentElement.remove();
       }
     });
-  };
+
+    document.addEventListener("click",function(event){
+      if (this.checked) {
+        任务.style.textDecoration = "line-through";
+        任务.style.color = "#999"
+        清单.append(task);
+        }
+      else{
+        任务.style.textDecoration = "none";
+        任务.style.color = "";
+        清单.prepend(task);
+        }
+    });
+
+};
+
+
+// window.onload = function() {
+//   const element = document.getElementById('yourElementId');
+//   if (element) {
+//       element.addEventListener('click', function() {
+
+//       打勾方块.addEventListener("change", function(){
+//         if (打勾方块.checked) {
+//           任务.style.textDecoration = "line-through";
+//           任务.style.color = "#999"
+//           清单.append(task);
+//           }
+//         else{
+//           任务.style.textDecoration = "none";
+//           任务.style.color = "";
+//           清单.prepend(task);
+//           }});
+//       });
+//   }
+// };
+    
