@@ -1,0 +1,183 @@
+/* 整体页面样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0f23; /* 深色背景，体现科技感 */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+header {
+    background-color: #1a1a3a;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* 阴影效果增加立体感 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header a {
+    color: #8888ff; /* 科技感的蓝色链接颜色 */
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s ease; /* 过渡效果 */
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+/* 主要内容区域样式 */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-text {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #1e1e3e;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+}
+
+.button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #3366ff; /* 鲜明的蓝色按钮 */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0033cc;
+}
+
+.background-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555577; /* 灰色系按钮 */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.background-button:hover {
+    background-color: #777799;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e3e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.task-list li:hover {
+    transform: translateY(-3px);
+}
+
+/* 复选框样式 */
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8888ff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #8888ff;
+    border-color: #8888ff;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713'; /* 对勾符号 */
+    font-size: 16px;
+    color: #0f0f23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 垃圾桶按钮样式 */
+button.trash-bin {
+    background-color: transparent;
+    border: none;
+    color: #ff4444;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button.trash-bin:hover {
+    color: #ff0000;
+}
+
+/* 标签样式 */
+label {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #1a1a3a;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: #8888ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
