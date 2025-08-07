@@ -5,37 +5,36 @@
     <!-- 设置字符编码为 UTF - 8 -->
     <meta charset="UTF-8">
     <!-- 设置页面标题 -->
-    <title>To - Do List</title>
+    <title>mushu's blog</title>
     <!-- 引用外部 CSS 文件，路径为./static/css/styles.css -->
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <h1>To - Do List</h1>
-            <nav>
-                <a href="http://dns14.mushu.icu/">Blog</a>
-            </nav>
+    <aside class="sidebar">
+        <div class="sidebar-title">
+            <h2>mushu's博客</h2>
         </div>
-    </header>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="#" class="active">首页</a> </li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">分类</a></li>
+                <li><a href="#">标签</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+        </div>
+
+    </aside>
     <main>
-        <div class="input-section">
-            <input type="text" class="input-text" placeholder="Add new item">
-            <div class="button-group">
-                <button class="button">+</button>
-                <button class="background-button">Backend</button>
-            </div>
-        </div>
-        <ul class="task-list">
-        </ul>
+        <h1>主要内容</h1>
+        <p>主要内容区域</p>
     </main>
     <footer>
         <div class="footer-content">
-            <a href="http://beian.miit.gov.cn/">鲁ICP备2024122948号</a>
+            <a href="https://beian.miit.gov.cn/">鲁ICP备2024122948号</a>
         </div>
     </footer>
-    <script src="./static/js/all.js"></script>
 </body>
 
 </html>
