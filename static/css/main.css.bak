@@ -19,7 +19,7 @@ body {
 /* 主要内容区域样式 */
 main {
     flex: 1; /* 占满剩余宽度 */
-    margin-left: 280px; /* 与侧边栏宽度一致，避免被覆盖 */
+    margin-left: 420px; /* 与侧边栏宽度一致，避免被覆盖 */
     padding: 20px;
 }
 
