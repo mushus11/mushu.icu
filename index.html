@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <!-- 设置页面标题 -->
     <title>mushu's blog</title>
-    <link rel="stylesheet" href="./static/css/main.css">
-    <link rel="stylesheet" href="./static/css/sidebar.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/sidebar.css">
+    <script src="/static/js/sidebar.js"></script>
 </head>
 
 <body>
@@ -22,16 +23,6 @@
             <a href="https://beian.miit.gov.cn/">鲁ICP备2024122948号</a>
         </div>
     </footer>
-    <script>
-        // 使用fetch获取sidebar.html的内容
-        fetch('./static/html/sidebar.html')
-            .then(response => response.text())
-            .then(html => {
-                // 将获取到的内容插入到侧边栏容器中
-                document.getElementById('sidebar-container').innerHTML = html;
-            })
-            .catch(error => console.error('加载侧边栏失败:', error));
-    </script>
 </body>
 
 </html>
