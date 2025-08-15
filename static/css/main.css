@@ -1,14 +1,37 @@
 *{
-    color: #000;
+    color: #fff;
 }
 
+body{
+    background:
+    linear-gradient(
+    rgba(255,255,255,0.3),rgba(255,255,255,0.3)
+    ),url(../images/background.png) center/cover no-repeat fixed;
+    margin: 0;
+    min-height: 100vh;
+}
 .menu{
     width: 100vh;
 }
 
+.menu-banner{
+    clear: left;
+    width: 15%;
+}
+
 .menu-banner-avatar{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.menu-banner-avatar img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu-banner-name{
 }
 
 .menu-banner,.menu-links{
@@ -16,11 +39,13 @@
 }
 
 .menu-link{
+    margin-right: 50px;
     float: left;
+    font-size: 20px;
+    font-family: 华文隶书, fangsong;
 }
 
 main{
     height: 100vh;
-    width: 100vw;
-    background-image: url("/static/images/background.jpg");
+    clear:left;
 }
