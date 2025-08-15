@@ -114,11 +114,11 @@
     list-style: none;
 }
 
-.nav-link {
+.menu-link {
     margin-bottom: 8px;
 }
 
-.nav-link a {
+.menu-link a {
     display: flex;
     align-items: center;
     padding: 14px 18px;
@@ -128,17 +128,17 @@
     transition: all 0.3s ease;
 }
 
-.nav-link a:hover {
+.menu-link a:hover {
     background: rgba(255, 255, 255, 0.08);
     color: #f0f0f0;
 }
 
-.nav-link a.active {
+.menu-link a.active {
     background: #3a7bd5;
     color: #ffffff;
 }
 
-.nav-link i {
+.menu-link i {
     margin-right: 15px;
     font-size: 1.1rem;
     width: 20px;

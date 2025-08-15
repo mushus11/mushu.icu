@@ -1,0 +1,42 @@
+*{
+    color: white;
+}
+/* 整体页面样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../../../static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* 主要内容区域样式 */
+main {
+    flex: 1; /* 占满剩余宽度 */
+    margin-left: 280px; /* 与侧边栏宽度一致，避免被覆盖 */
+    padding: 20px;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #1a1a3a;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: #8888ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
