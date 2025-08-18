@@ -1,5 +1,5 @@
 *{
-    color: #000;
+    color: #fff;
 }
 
 body{
@@ -47,11 +47,16 @@ body{
 }
 
 .menu-link{
+    list-style: none;
     margin-right: 50px;
     float: left;
     font-size: 20px;
 /*    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
     font-family: 华文隶书, fangsong;
+}
+
+.menu-link a{
+    text-decoration: none;
 }
 
 main{
