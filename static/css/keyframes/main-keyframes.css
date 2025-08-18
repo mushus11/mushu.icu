@@ -1,0 +1,17 @@
+@keyframes typing-main-banner-title-inner {
+    to{
+        width: 199px
+    }
+}
+
+@keyframes typing-main-banner-title-subtitle {
+    to{
+        width: 558px
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}

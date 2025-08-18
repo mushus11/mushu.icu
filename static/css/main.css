@@ -1,31 +1,35 @@
 *{
-    color: #fff;
+    color: #000;
 }
 
 body{
     background:
     linear-gradient(
-    rgba(255,255,255,0.3),rgba(255,255,255,0.3)
+    rgba(255,255,255,0.2),rgba(255,255,255,0.2)
     ),url(../images/background.png) center/cover no-repeat fixed;
     margin: 0;
     min-height: 100vh;
 }
-.menu{
-    width: 100vh;
+
+#menu{
+    width: 100%;
+    height: 62px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
 }
 
-.menu-banner{
+#menu-banner{
     clear: left;
-    width: 15%;
 }
 
-.menu-banner-avatar{
+#menu-banner-avatar{
     width: 50px;
     height: 50px;
     float: left;
 }
 
-.menu-banner-avatar img{
+#menu-banner-avatar img{
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -36,16 +40,55 @@ body{
 
 .menu-banner,.menu-links{
     float: left;
+    height: 100%;
+}
+
+#menu-link-box{
 }
 
 .menu-link{
     margin-right: 50px;
     float: left;
     font-size: 20px;
+/*    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
     font-family: 华文隶书, fangsong;
 }
 
 main{
     height: 100vh;
     clear:left;
+    display: flex;
+}
+
+#main-banner-title{
+    width: 1010px;
+    margin: auto;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-banner-title-text{
+    font-size: 35px;
+    color: #1a1a3a;
+    text-transform: capitalize;
+}
+
+#main-banner-title-inner{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing-main-banner-title-inner 1.5s steps(12)
+    forwards , blink 0.7s infinite;
+    border-right: 2px solid #000;
+}
+
+#main-banner-title-subtitle{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing-main-banner-title-subtitle 1.5s steps(12)
+    forwards , blink 0.7s infinite;
+    border-right: 2px solid #000;
 }
