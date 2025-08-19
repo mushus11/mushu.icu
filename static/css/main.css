@@ -43,16 +43,23 @@ body{
     height: 100%;
 }
 
-#menu-link-box{
+#menu-links-box ul{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .menu-link{
+    border-radius: 50% 0;
     list-style: none;
     margin-right: 50px;
     float: left;
     font-size: 20px;
 /*    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
     font-family: 华文隶书, fangsong;
+}
+
+.menu-link:hover{
+    background: rgba(255,255,255,0.2);
 }
 
 .menu-link a{
